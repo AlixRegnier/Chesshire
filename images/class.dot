@@ -1,0 +1,17 @@
+digraph G
+{
+    rankdir=BT
+    node [shape=box]
+    edge [arrowhead=onormal]
+    Chessboard -> Board
+    {Bishop, King, Knight, Pawn, Queen, Rook} -> ChessPiece -> Piece
+
+    Board [label=<<i>Board (abstract)</i>>]
+    Piece [label=<<i>Piece (abstract)</i>>]
+    ChessPiece [label=<<i>ChessPiece (abstract)</i>>]
+
+    empty -> GameException -> Exception
+
+    empty [label="..."]
+    GameException [label=<<i>GameException (abstract)</i>>]
+}

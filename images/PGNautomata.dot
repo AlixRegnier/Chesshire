@@ -1,0 +1,28 @@
+digraph G
+{
+    rankdir=LR
+    start -> a [label="[NBQRK]"]
+    start -> f [label="[a-h]"]
+    f -> c [label="x"]
+    f -> e [label="[1-8]"]
+    a -> b [label="[a-h]"]
+    b -> e [label="[1-8]"]
+    a -> g [label="[1-8]"]
+    g -> c [label="x"]
+    
+    b -> d [label="[a-h]"]
+    a -> c [label="x"]
+    b -> c [label="x"]
+    c -> d [label="[a-h]"]
+    d -> e [label="[1-8]"]
+
+    
+    start [shape=box]
+    a [label=""]
+    b [label=""]
+    c [label=""]
+    d [label=""]
+    e [label="end" shape=triangle]
+    f [label=""]
+    g [label=""]
+}
